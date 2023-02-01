@@ -33,6 +33,6 @@ build {
   sources = ["source.amazon-ebs.ssm-example"]
 
   provisioner "shell" {
-    inline = ["echo Connected via SSM at '${build.User}@${build.Host}:${build.Port}'"]
+    script = "script.sh"
   }
 }
