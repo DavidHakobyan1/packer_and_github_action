@@ -20,5 +20,11 @@ jobs:
     - name: Packer Init
       run: packer init .
       
+    - name: Packer Format
+      run: packer fmt .
+      
+    - name: Packer Validate
+      run: packer validate .
+      
     - name: Packer Build - Branches
       run: packer build .
