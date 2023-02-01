@@ -1,6 +1,7 @@
 on:
   push:
-    branches: [ "main" ]
+    paths:
+      - script.sh
 
 jobs:
   build:
